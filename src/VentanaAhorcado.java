@@ -2,20 +2,20 @@
 import javax.swing.JButton;
 
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author xp
  */
-public class ElAhorcado extends javax.swing.JFrame {
+public class VentanaAhorcado extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ElAhorcado
-     */
-    public ElAhorcado() {
+    
+    
+
+    public VentanaAhorcado() {
         initComponents();
     }
 
@@ -23,7 +23,6 @@ public class ElAhorcado extends javax.swing.JFrame {
         botonPulsado.setVisible(false);
         
     }
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -48,7 +47,7 @@ public class ElAhorcado extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
@@ -59,31 +58,30 @@ public class ElAhorcado extends javax.swing.JFrame {
         jButton23 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jButton28 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("_ _ _ _ _");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 480, 103));
-
-        jPanel1.setPreferredSize(new java.awt.Dimension(405, 405));
+        jLabel1.setText("_ _ _ _ _ ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 316, 68));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 420, Short.MAX_VALUE)
+            .addGap(0, 200, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
+            .addGap(0, 200, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 420, 357));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 97, -1, -1));
 
         jButton1.setText("a");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -91,7 +89,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton1MousePressed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, 49, 48));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 315, 40, 40));
 
         jButton2.setText("b");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -99,7 +97,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton2MousePressed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 450, 49, 48));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 315, 40, 40));
 
         jButton3.setText("d");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -107,334 +105,310 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton3MousePressed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, 49, 48));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 315, 40, 40));
 
-        jButton4.setText("e");
+        jButton4.setText("c");
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton4MousePressed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 49, 48));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 315, 40, 40));
 
-        jButton5.setText("c");
+        jButton5.setText("j");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton5MousePressed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 450, 49, 48));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 373, 40, 40));
 
-        jButton6.setText("f");
+        jButton6.setText("k");
         jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton6MousePressed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, 49, 48));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 373, 40, 40));
 
-        jButton7.setText("k");
+        jButton7.setText("i");
         jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton7MousePressed(evt);
             }
         });
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 510, 49, 48));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 373, 40, 40));
 
-        jButton8.setText("j");
+        jButton8.setText("h");
         jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton8MousePressed(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 49, 48));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 373, 40, 40));
 
-        jButton9.setText("h");
+        jButton9.setText("v");
         jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton9MousePressed(evt);
             }
         });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 510, 49, 48));
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 489, 40, 40));
 
-        jButton10.setText("g");
+        jButton10.setText("p");
         jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton10MousePressed(evt);
             }
         });
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 510, 49, 48));
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 431, 40, 40));
 
-        jButton11.setText("l");
+        jButton11.setText("q");
         jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton11MousePressed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, 49, 48));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 431, 40, 40));
 
-        jButton12.setText("i");
+        jButton12.setText("o");
         jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton12MousePressed(evt);
             }
         });
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 49, 48));
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 431, 40, 40));
 
-        jButton13.setText("u");
+        jButton13.setText("ñ");
         jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton13MousePressed(evt);
             }
         });
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 630, 49, 48));
+        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 431, 40, 40));
 
-        jButton14.setText("r");
-        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton14MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 630, 49, 48));
-
-        jButton16.setText("v");
-        jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton16MousePressed(evt);
-            }
-        });
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 630, 49, 48));
-
-        jButton17.setText("s");
-        jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton17MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 630, 49, 48));
-
-        jButton18.setText("w");
-        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton18MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 630, 49, 48));
-
-        jButton19.setText("p");
-        jButton19.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton19MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, 49, 48));
-
-        jButton20.setText("o");
-        jButton20.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton20MousePressed(evt);
-            }
-        });
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 570, 49, 48));
-
-        jButton21.setText("n");
-        jButton21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton21MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 570, 49, 48));
-
-        jButton22.setText("m");
-        jButton22.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton22MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 49, 48));
-
-        jButton23.setText("q");
-        jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton23MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, 49, 48));
-
-        jButton24.setText("ñ");
-        jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton24MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, 49, 48));
-
-        jButton25.setText("x");
-        jButton25.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton25MousePressed(evt);
-            }
-        });
-        getContentPane().add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 630, 49, 48));
-
-        jButton15.setText("y");
+        jButton15.setText("w");
         jButton15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton15MousePressed(evt);
             }
         });
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 690, 49, 48));
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 489, 40, 40));
 
-        jButton29.setText("z");
-        jButton29.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton16.setText("u");
+        jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton29MousePressed(evt);
+                jButton16MousePressed(evt);
             }
         });
-        getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 690, 49, 48));
+        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 489, 40, 40));
+
+        jButton17.setText("y");
+        jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton17MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 489, 40, 40));
+
+        jButton18.setText("x");
+        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton18MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 489, 40, 40));
+
+        jButton19.setText("r");
+        jButton19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton19MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 431, 40, 40));
+
+        jButton20.setText("s");
+        jButton20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton20MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 431, 40, 40));
+
+        jButton21.setText("e");
+        jButton21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton21MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 315, 40, 40));
+
+        jButton22.setText("f");
+        jButton22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton22MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 315, 40, 40));
+
+        jButton23.setText("m");
+        jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton23MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 373, 40, 40));
+
+        jButton24.setText("l");
+        jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton24MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 373, 40, 40));
+
+        jButton25.setText("n");
+        jButton25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton25MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 373, 40, 40));
+
+        jButton26.setText("g");
+        jButton26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton26MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 315, 40, 40));
+
+        jButton27.setText("z");
+        jButton27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton27MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 489, 40, 40));
+
+        jButton28.setText("t");
+        jButton28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton28MousePressed(evt);
+            }
+        });
+        getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 431, 40, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton1MousePressed
 
     private void jButton2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton2MousePressed
 
     private void jButton3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton3MousePressed
 
     private void jButton4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton4MousePressed
 
     private void jButton5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton5MousePressed
 
     private void jButton6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton6MousePressed
 
     private void jButton7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton7MousePressed
 
     private void jButton8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton8MousePressed
 
     private void jButton9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton9MousePressed
 
     private void jButton10MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton10MousePressed
 
     private void jButton11MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton11MousePressed
 
     private void jButton12MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton12MousePressed
 
     private void jButton13MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton13MousePressed
 
-    private void jButton14MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MousePressed
-        chequeaBoton((JButton)evt.getSource());
-    }//GEN-LAST:event_jButton14MousePressed
+    private void jButton15MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MousePressed
+        chequeaBoton ((JButton) evt.getSource());
+    }//GEN-LAST:event_jButton15MousePressed
 
     private void jButton16MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton16MousePressed
 
     private void jButton17MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton17MousePressed
 
     private void jButton18MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton18MousePressed
 
     private void jButton19MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton19MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton19MousePressed
 
     private void jButton20MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton20MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton20MousePressed
 
     private void jButton21MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton21MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton21MousePressed
 
     private void jButton22MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton22MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton22MousePressed
 
     private void jButton23MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton23MousePressed
 
     private void jButton24MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton24MousePressed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        chequeaBoton((JButton)evt.getSource());
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        chequeaBoton((JButton)evt.getSource());
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        chequeaBoton((JButton)evt.getSource());
-    }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        chequeaBoton((JButton)evt.getSource());
-    }//GEN-LAST:event_jButton16ActionPerformed
-
     private void jButton25MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MousePressed
-        chequeaBoton((JButton)evt.getSource());
+        chequeaBoton ((JButton) evt.getSource());
     }//GEN-LAST:event_jButton25MousePressed
 
-    private void jButton15MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MousePressed
-        chequeaBoton((JButton)evt.getSource());
-    }//GEN-LAST:event_jButton15MousePressed
+    private void jButton26MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MousePressed
+        chequeaBoton ((JButton) evt.getSource());
+    }//GEN-LAST:event_jButton26MousePressed
 
-    private void jButton29MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton29MousePressed
-        chequeaBoton((JButton)evt.getSource());
-    }//GEN-LAST:event_jButton29MousePressed
+    private void jButton27MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MousePressed
+        chequeaBoton ((JButton) evt.getSource());
+    }//GEN-LAST:event_jButton27MousePressed
+
+    private void jButton28MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton28MousePressed
+        chequeaBoton ((JButton) evt.getSource());
+    }//GEN-LAST:event_jButton28MousePressed
 
     /**
      * @param args the command line arguments
@@ -453,30 +427,30 @@ public class ElAhorcado extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ElAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ElAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ElAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ElAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAhorcado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ElAhorcado().setVisible(true);
+                new VentanaAhorcado().setVisible(true);
             }
         });
     }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -489,7 +463,9 @@ public class ElAhorcado extends javax.swing.JFrame {
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
