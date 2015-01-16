@@ -11,18 +11,47 @@ import javax.swing.JButton;
  * @author xp
  */
 public class ElAhorcado extends javax.swing.JFrame {
-
+    
+    //palabraOculta en el futuro la pondre con un random.
+    String palabraOculta = "CETYS";
+    
+    //contador para el numero de fallos
+    int numeroFallos = 0;
+    
     /**
      * Creates new form ElAhorcado
      */
     public ElAhorcado() {
         initComponents();
     }
-
+    
+    
+    
+    //chequeaLetra. este metodo recibe la letra que aparece en el boton que ha sido pulsado.
+    
+    private void chequeaLetra(String letra){
+        //guardo el texto de la pantalla axiliar.
+       String palabraConGuiones = jLabel1.getText(); 
+       letra = letra.toUpperCase();
+       
+       if(palabraOculta.contains(letra)){//la letra está
+           //desocultar la letra en la pantalla
+           //quitar el guión bajo
+           
+       }
+       else{//la letra no esta en la palabra oculta
+           numeroFallos++;
+           jLabel2.setText(String.valueOf(numeroFallos));
+       }
+    }
+    
+    
+    //recibe el boton que ha sido pulsado.
     private void chequeaBoton(JButton botonPulsado){
         botonPulsado.setVisible(false);
-        
+        chequeaLetra(botonPulsado.getText());
     }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -61,6 +90,7 @@ public class ElAhorcado extends javax.swing.JFrame {
         jButton25 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -68,7 +98,7 @@ public class ElAhorcado extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("_ _ _ _ _");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 480, 103));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 44, 500, 70));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(405, 405));
 
@@ -83,7 +113,7 @@ public class ElAhorcado extends javax.swing.JFrame {
             .addGap(0, 357, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 420, 357));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 420, 357));
 
         jButton1.setText("a");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -91,7 +121,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton1MousePressed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, 49, 48));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, 49, 48));
 
         jButton2.setText("b");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -99,7 +129,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton2MousePressed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 450, 49, 48));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 500, 49, 48));
 
         jButton3.setText("d");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -107,7 +137,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton3MousePressed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, 49, 48));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, 49, 48));
 
         jButton4.setText("e");
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -115,7 +145,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton4MousePressed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 49, 48));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 500, 49, 48));
 
         jButton5.setText("c");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -123,7 +153,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton5MousePressed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 450, 49, 48));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, 49, 48));
 
         jButton6.setText("f");
         jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -131,7 +161,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton6MousePressed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, 49, 48));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 500, 49, 48));
 
         jButton7.setText("k");
         jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -144,7 +174,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 510, 49, 48));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 560, 49, 48));
 
         jButton8.setText("j");
         jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -152,7 +182,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton8MousePressed(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 49, 48));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, 49, 48));
 
         jButton9.setText("h");
         jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -160,7 +190,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton9MousePressed(evt);
             }
         });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 510, 49, 48));
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 560, 49, 48));
 
         jButton10.setText("g");
         jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -173,7 +203,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 510, 49, 48));
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 560, 49, 48));
 
         jButton11.setText("l");
         jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -181,7 +211,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton11MousePressed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, 49, 48));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 49, 48));
 
         jButton12.setText("i");
         jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -189,7 +219,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton12MousePressed(evt);
             }
         });
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 49, 48));
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, 49, 48));
 
         jButton13.setText("u");
         jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -197,7 +227,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton13MousePressed(evt);
             }
         });
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 630, 49, 48));
+        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 680, 49, 48));
 
         jButton14.setText("r");
         jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -205,7 +235,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton14MousePressed(evt);
             }
         });
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 630, 49, 48));
+        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 680, 49, 48));
 
         jButton16.setText("v");
         jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -218,7 +248,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton16ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 630, 49, 48));
+        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 680, 49, 48));
 
         jButton17.setText("s");
         jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -226,7 +256,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton17MousePressed(evt);
             }
         });
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 630, 49, 48));
+        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 680, 49, 48));
 
         jButton18.setText("w");
         jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -234,7 +264,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton18MousePressed(evt);
             }
         });
-        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 630, 49, 48));
+        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 680, 49, 48));
 
         jButton19.setText("p");
         jButton19.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -242,7 +272,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton19MousePressed(evt);
             }
         });
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, 49, 48));
+        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 620, 49, 48));
 
         jButton20.setText("o");
         jButton20.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -255,7 +285,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton20ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 570, 49, 48));
+        getContentPane().add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 620, 49, 48));
 
         jButton21.setText("n");
         jButton21.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -263,7 +293,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton21MousePressed(evt);
             }
         });
-        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 570, 49, 48));
+        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 620, 49, 48));
 
         jButton22.setText("m");
         jButton22.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -271,7 +301,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton22MousePressed(evt);
             }
         });
-        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 49, 48));
+        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 620, 49, 48));
 
         jButton23.setText("q");
         jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -279,7 +309,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton23MousePressed(evt);
             }
         });
-        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, 49, 48));
+        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 620, 49, 48));
 
         jButton24.setText("ñ");
         jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -287,7 +317,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton24MousePressed(evt);
             }
         });
-        getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, 49, 48));
+        getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 620, 49, 48));
 
         jButton25.setText("x");
         jButton25.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -295,7 +325,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton25MousePressed(evt);
             }
         });
-        getContentPane().add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 630, 49, 48));
+        getContentPane().add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 680, 49, 48));
 
         jButton15.setText("y");
         jButton15.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -303,7 +333,7 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton15MousePressed(evt);
             }
         });
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 690, 49, 48));
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 740, 49, 48));
 
         jButton29.setText("z");
         jButton29.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -311,7 +341,10 @@ public class ElAhorcado extends javax.swing.JFrame {
                 jButton29MousePressed(evt);
             }
         });
-        getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 690, 49, 48));
+        getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 740, 49, 48));
+
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 60, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -498,6 +531,7 @@ public class ElAhorcado extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
